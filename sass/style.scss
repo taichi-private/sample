@@ -15,34 +15,37 @@ body {
 	top: 0;
 	left: 0;
 }
-main {
+.article-content {
+	margin: 0 auto;
+	display: table;
+	margin-top: 75px;
 	width: 1000px;
-	background-color: #fafafa;
-	margin: 75px auto 0 auto;
-	padding: 10px;
+	background-color: #fff;
+	padding: 15px;
 	h1 {
-		margin-top: 20px;
-		margin-bottom: 30px;
+		text-align: center;
 		font-weight: bold;
 		font-size: 24px;
-		text-align: center;
+		margin: 15px 0;
 	}
-	.wrapper {
-		display: inline-block;
-		.content1 {
-			box-sizing:border-box;
+	main {
+		margin-right: 7px;
+		box-sizing: border-box;
+		border: 1px solid #333;
+		float: left;
+		width: 600px;
+		padding: 10px;
+	}
+	aside {
+		position: relative;
+		margin-left: 8px; 
+		box-sizing: border-box;
+		float: left;
+		.side_content {
+			box-sizing: border-box;
 			padding: 10px;
-			width: 600px;
-			float: left;
-			border: 1px solid #000;
-			margin-right: 10px;
-		}
-		.content2 {
-			box-sizing:border-box;
-			padding: 10px;
-			width: 390px;
-			float: left;
-			border: 1px solid #000;
+			width: 385px;
+			border: 1px solid #333;
 		}
 	}
 }

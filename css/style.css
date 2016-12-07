@@ -18,43 +18,46 @@ body {
 }
 
 /* line 18, ../sass/style.scss */
-main {
+.article-content {
+  margin: 0 auto;
+  display: table;
+  margin-top: 75px;
   width: 1000px;
-  background-color: #fafafa;
-  margin: 75px auto 0 auto;
-  padding: 10px;
+  background-color: #fff;
+  padding: 15px;
 }
-/* line 23, ../sass/style.scss */
-main h1 {
-  margin-top: 20px;
-  margin-bottom: 30px;
+/* line 25, ../sass/style.scss */
+.article-content h1 {
+  text-align: center;
   font-weight: bold;
   font-size: 24px;
-  text-align: center;
+  margin: 15px 0;
 }
-/* line 30, ../sass/style.scss */
-main .wrapper {
-  display: inline-block;
-}
-/* line 32, ../sass/style.scss */
-main .wrapper .content1 {
+/* line 31, ../sass/style.scss */
+.article-content main {
+  margin-right: 7px;
   box-sizing: border-box;
-  padding: 10px;
+  border: 1px solid #333;
+  float: left;
   width: 600px;
-  float: left;
-  border: 1px solid #000;
-  margin-right: 10px;
+  padding: 10px;
 }
-/* line 40, ../sass/style.scss */
-main .wrapper .content2 {
+/* line 39, ../sass/style.scss */
+.article-content aside {
+  position: relative;
+  margin-left: 8px;
+  box-sizing: border-box;
+  float: left;
+}
+/* line 44, ../sass/style.scss */
+.article-content aside .side_content {
   box-sizing: border-box;
   padding: 10px;
-  width: 390px;
-  float: left;
-  border: 1px solid #000;
+  width: 385px;
+  border: 1px solid #333;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .footer {
   clear: both;
   background-color: #fef334;

@@ -1,10 +1,13 @@
 $(function() {
-  var sidenav = $('.content2');
-  var sidenav_offset = sidenav.offset();
-  var sidenav_outerHeight = sidenav.outerHeight();
+  var wd = $(window);
+  var sn = $('.side_content');
+  var sn_off_t = sn.offset().top;
 
-  console.log(sidenav_offset);
-  console.log(sidenav_outerHeight);
-
-  
+  $(window).scroll(function () {
+    if(sn_off_t < wd.scrollTop()){
+      sn.css('position','fixed');
+    } else {
+      sn.css('position','');
+    }
+  });
 });
