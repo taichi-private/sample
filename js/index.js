@@ -1,16 +1,15 @@
 $(function() {
   var wd = $(window);
+  var hd = $('.header');
   var sn = $('.side_content');
+  var hd_h = hd.outerHeight();
   var sn_off_t = sn.offset().top;
   var mc = $('.main_content');
   var as = $('aside');
   var sc_bottom = mc.outerHeight() - sn.outerHeight();
 
-  console.log(sc_bottom);
-
   $(window).scroll(function () {
-    console.log(wd.scrollTop());
-    if(sn_off_t < wd.scrollTop()){
+    if(hd_h < wd.scrollTop()){
       as.css('height',mc.outerHeight());
       sn.css('position','fixed');
       sn.css('top',85);
